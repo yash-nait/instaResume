@@ -49,7 +49,10 @@ function Create(){
 
     return(
         <div className="create-box">
-            <div><h1>Create A Resume</h1></div>
+            <div>
+                <h1>Create A Resume</h1>
+                <p>please fill all blocks</p>
+            </div>
             <div className="create">
 
                 <div className="create-section">

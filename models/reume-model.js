@@ -4,13 +4,13 @@ const Schema = mongoose.Schema
 const Resume = new Schema(
     {
         name: { type: String, required: true },
-        img_link :{ type: String, required: true},
-        skill1: { type: String, required: true },
-        skill2: { type: String, required: true },
-        award1: { type: String, required: true },
-        award2: { type: String, required: true },
-        education1: { type: String, required: true },
-        education2: { type: String, required: true },
+        img_link :{ type: String, required: false},
+        skill1: { type: String, required: false },
+        skill2: { type: String, required: false },
+        award1: { type: String, required: false },
+        award2: { type: String, required: false },
+        education1: { type: String, required: false },
+        education2: { type: String, required: false },
         exp1: { type: String, required: false },
         exp2: { type: String, required: false },
         code: {type: String, required: true,  unique : true}
