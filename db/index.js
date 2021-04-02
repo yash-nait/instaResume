@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+require('dotenv').config()
 
 mongoose
     .connect(`mongodb+srv://dbyash:${process.env.passdb}@porjectdb.gs8nc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true , useCreateIndex: true})

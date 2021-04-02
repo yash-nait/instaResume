@@ -29,7 +29,7 @@ function Search(){
     }
 
     return(
-        <div class="search">
+        <div className="search">
             <h1>Search for your Resume:</h1>
             <div className="search-inp">
                 <h3 style={{margin: "20px"}}>Enter username</h3>

@@ -25,6 +25,7 @@ function Create(){
                 [name]: value
             }
         })
+        console.log(resume);
     }
 
     const submitResume = () => {
