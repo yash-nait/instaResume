@@ -60,8 +60,10 @@ function Search(){
             <div className="about">
                 <h3>To see creator's resume</h3>
                 <ol>
-                    <h3><li>Username: yash</li></h3>
-                    <h3><li>OR just click on search</li></h3>
+                    <h3><li>Enter username: yash</li></h3>
+                    <h3><li>OR just click on resume</li></h3>
+                    <h3><li>Enter uresname: trial </li></h3>
+                    <h3><li>TO SEE A DUMMY resume</li></h3>
                 </ol>
             </div>
         </div>

@@ -16,7 +16,8 @@ function Card(props){
         <div>
             <div className="resume">
                 <h1 className="r-name">{props.name}</h1>
-                <img className="prof-img" src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?cs=srgb&dl=pexels-linkedin-sales-navigator-2182970.jpg&fm=jpg" />
+                <img className="prof-img" src={props.img_link} />
+                {/* https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?cs=srgb&dl=pexels-linkedin-sales-navigator-2182970.jpg&fm=jpg */}
                 <div className="list-1">
                     <ul className="list">
                         <h1 className="list-title">Skills</h1>

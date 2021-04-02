@@ -3,7 +3,7 @@ function Navbar(){
     return(
         <div>
             <nav>
-                <h3 className="navbar-text">Resume</h3>
+                <h3 className="navbar-text">InstaResume</h3>
             </nav>
         </div>
     )
