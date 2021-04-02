@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://insta-resume.herokuapp.com//api'
+    baseURL: 'https://insta-resume.herokuapp.com/api'
 });
 
 export const insertResume = payload => api.post("/resume", payload);
