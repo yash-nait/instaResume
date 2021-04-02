@@ -14,11 +14,15 @@ app.use(bodyParser.json())
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-app.get('/', (req,res) => {
-    res.send("OK")
-})
-
 app.use('/api',resumeRouter)
+
+if(process.env.NODE_ENV == 'production'){
+    app.use(express.static('client/build'));
+    const path = require("path");
+    app.get("*", (req, res) => {
+      res.sendFile(path.resolve(__dirname,"client","build","index.html"));
+    });
+  }
 
 app.listen(apiPort, () => {
     console.log(`running on port ${apiPort}`)
