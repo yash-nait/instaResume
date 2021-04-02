@@ -34,7 +34,7 @@ function Search(){
             <div className="search-inp">
                 <h3 style={{margin: "20px"}}>Enter username</h3>
                 <input type="text" name="name" onChange={(event) => {setCode(event.target.value)} }></input>
-                <button onClick={showData}>RESUME</button>
+                <button onClick={showData} className="bttn-style">RESUME</button>
                 {show === true ? <Card 
                     name={dataResume.name}
                     img_link= {dataResume.img_link}
@@ -55,6 +55,13 @@ function Search(){
                 <ol>
                     <h3><li>Fill the form ➡ </li></h3>
                     <h3><li>Fill the Resume Code above ⬆</li></h3>
+                </ol>
+            </div>
+            <div className="about">
+                <h3>To see creator's resume</h3>
+                <ol>
+                    <h3><li>Username: yash</li></h3>
+                    <h3><li>OR just click on search</li></h3>
                 </ol>
             </div>
         </div>

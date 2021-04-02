@@ -96,7 +96,7 @@ function Create(){
                     <br/>
                 </div>
 
-                <button type="submit" onClick={submitResume}>Submit</button>
+                <button type="submit" className="bttn-style" onClick={submitResume}>Submit</button>
 
             </div>
         </div>

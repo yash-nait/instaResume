@@ -29,6 +29,13 @@ h3{
     margin: 20px;
 }
 
+.bttn-style{
+    background-color: #0F2027;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
 .feature-search{
     background-color: rgba(256, 256, 256, 0.4);
     float: left;
