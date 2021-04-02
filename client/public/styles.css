@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: white;
+
+    margin: 0 75px; 
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+h3{
+    /* bold italic */
+    font-family: 'Merriweather',serif;
+    font-style: italic;
+    margin: 10px;
+}
+
+.navbar-text{
+    font-size: 50px;
+    margin: 20px;
+}
+
+.feature-search{
+    background-color: rgba(256, 256, 256, 0.4);
+    float: left;
+    width: 40%;
+    margin: 0 5% 5% 5%;
+}
+
+.feature-form{
+    background-color: rgba(0, 0, 0, 0.4);
+    float: left;
+    width: 40%;
+    margin: 0 5% 5% 5%;
+}
+
+.create-box{
+    padding: 15px;
+    text-align: center;
+}
+
+.create-section{
+    margin: 15px;
+}
+
+.search{
+    padding: 20px;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.search-inp{
+    margin: 20px;
+}
+
+.about{
+    background-color: rgba(256, 256, 256, 0.4);
+}
+
+.resume{
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+
+    height: 100%;
+    width: 100%;
+
+    text-align: initial;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    transform: translateY(100%);
+
+    overflow: scroll;
+}
+
+.prof-img{
+    height: 480px;
+    width: 240px;
+    float: right;
+    margin: 0 10%;
+    border-radius: 5%;
+
+    opacity: 0.01;
+
+    transition: all 0.5s;
+}
+
+.prof-img:hover{
+    height: 550px;
+    width: 275px;
+}
+
+.r-name{
+    color: rgb(71, 127, 199);
+    font-size: 5rem;
+    margin: 20px;
+
+    margin-left: 45%;
+
+    transition: all 0.5s;
+}
+
+.r-name:hover{
+    color: rgb(123, 172, 235);
+    font-size: 7rem;
+}
+
+.list{
+    list-style-type: none;
+    margin: 4rem;
+    width: 60%;
+    transform: translateX(-100%);
+}
+
+
+.list-title{
+    color: teal;
+    font-size: 4rem;
+    transition: all 0.5s;
+}
+
+.list-title:hover{
+    color: rgb(0, 255, 255);
+    font-size: 5rem;
+}
+
+.list-item{
+    color: rgb(122, 122, 122);
+    font-size: 2.5rem;
+    transition: all 0.5s;
+}
+.list-item{
+    color:rgb(255, 254, 254);
+    font-size: 3rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .feature-box{
+        text-align: center;
+    }
+    .feature-form{
+        clear: left;
+        width: 100%;
+    }
+    .feature-search{
+        clear: left;
+        width: 100%;
+    }
+  }
