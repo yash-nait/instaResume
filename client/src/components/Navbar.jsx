@@ -2,8 +2,8 @@
 function Navbar(){
     return(
         <div>
-            <nav>
-                <h3 className="navbar-text">InstaResume</h3>
+            <nav  className="navbar navbar-dark bg-dark">
+                <a className="navbar-brand logo" href="#">InstaResume</a>
             </nav>
         </div>
     )

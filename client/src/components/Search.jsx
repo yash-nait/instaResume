@@ -1,4 +1,3 @@
-import { set } from "mongoose";
 import { useState } from "react";
 import api from "../api";
 import Card from "./Card";
@@ -19,10 +18,10 @@ function Search(){
         exp2: "",
         code: ""
     })
-    const[code, setCode] = useState("dragon")
+    const[code, setCode] = useState("try")
 
-    const showData = () =>{
-        api.getResumeByCode(code).then((x)=>{
+    const showData = async () =>{
+        await api.getResumeByCode(code).then((x)=>{
             setData(x.data.data)
         })
         setShow(true)
@@ -30,11 +29,14 @@ function Search(){
 
     return(
         <div className="search">
-            <h1>Search for your Resume:</h1>
-            <div className="search-inp">
-                <h3 style={{margin: "20px"}}>Enter username</h3>
-                <input type="text" name="name" onChange={(event) => {setCode(event.target.value)} }></input>
-                <button onClick={showData} className="bttn-style">RESUME</button>
+            <h1 className="intro-text">Search Your Resume</h1>
+            <div>
+                <h3 className="search-text">Enter username: <span><input type="text" name="name" className="search-box" onChange={(event) => {setCode(event.target.value)} }></input></span></h3>
+                <p>Search try for dummy resume</p>
+                <br />
+                <button onClick={showData} className="btn btn-success btn-lg">Search</button>
+                <h1 style={{fontWeight: "650"}}>OR</h1>
+                <a href="#box"><button className="btn btn-primary btn-lg">Create</button></a>
                 {show === true ? <Card 
                     name={dataResume.name}
                     img_link= {dataResume.img_link}
@@ -49,22 +51,6 @@ function Search(){
                     code= {dataResume.code}
                 /> : null}
                 <br/>
-            </div>
-            <div className="about">
-                <h3>An animated WEB page in just 1 minute</h3>
-                <ol>
-                    <h3><li>Fill the form ➡ </li></h3>
-                    <h3><li>Fill the Resume Code above ⬆</li></h3>
-                </ol>
-            </div>
-            <div className="about">
-                <h3>To see creator's resume</h3>
-                <ol>
-                    <h3><li>Enter username: yash</li></h3>
-                    <h3><li>OR just click on resume</li></h3>
-                    <h3><li>Enter uresname: trial </li></h3>
-                    <h3><li>TO SEE A DUMMY resume</li></h3>
-                </ol>
             </div>
         </div>
         

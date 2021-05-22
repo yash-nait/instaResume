@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Card from './Card';
+import React from 'react';
 import Feature from './Feature';
 import Navbar from './Navbar';
 

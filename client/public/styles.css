@@ -1,82 +1,63 @@
-*{
-    margin: 0;
-}
-
 body{
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background-color: #121212;
     color: white;
-
-    margin: 0 75px; 
+    text-align: center;
+    margin: 0;
+    overflow-x: hidden;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;
-    color: white;
+.btn{
+    margin: 1%;
 }
 
-h3{
-    /* bold italic */
-    font-family: 'Merriweather',serif;
-    font-style: italic;
-    margin: 10px;
-}
-
-.navbar-text{
-    font-size: 50px;
-    margin: 20px;
-}
-
-.bttn-style{
-    background-color: #0F2027;
-    color: white;
-    font-weight: bold;
-    border-radius: 2px;
-}
-
-.feature-search{
-    background-color: rgba(256, 256, 256, 0.4);
-    float: left;
-    width: 40%;
-    margin: 0 5% 5% 5%;
-}
-
-.feature-form{
-    background-color: rgba(0, 0, 0, 0.4);
-    float: left;
-    width: 40%;
-    margin: 0 5% 5% 5%;
+.logo{
+    font-weight: 600;
+    margin-left: 2%;
 }
 
 .create-box{
-    padding: 15px;
-    text-align: center;
+    background-color: rgb(255, 255, 255,0.05);
+    margin: 5%;
+    padding: 20px;
 }
 
 .create-section{
-    margin: 15px;
+    background-color: rgb(255, 255, 255,0.05);
+    margin: 20px;
+    padding: 20px;
 }
 
 .search{
-    padding: 20px;
-    margin: 100px 0;
-    text-align: center;
+    background-image: url("./image/img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100vw;
+
+    padding-top: 5vh;
 }
 
-.search-inp{
-    margin: 20px;
+.intro-text{
+    font-size: 10vh;
+    font-weight: 650;
+    margin: 5%;
 }
 
-.about{
-    background-color: rgba(256, 256, 256, 0.4);
+.search-text{
+    font-size: 5vh;
+}
+
+.search-box{
+    height: 5vh;
+    width: 30vw;
+    border: 3px solid;
+
+    font-size: 3vh;
 }
 
 .resume{
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-color: #121212;
 
     height: 100%;
     width: 100%;
@@ -105,13 +86,13 @@ h3{
 }
 
 .prof-img:hover{
-    height: 550px;
-    width: 275px;
+    height: 500px;
+    width: 250px;
 }
 
 .r-name{
     color: rgb(71, 127, 199);
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 20px;
 
     margin-left: 45%;
@@ -121,12 +102,12 @@ h3{
 
 .r-name:hover{
     color: rgb(123, 172, 235);
-    font-size: 7rem;
+    font-size: 5rem;
 }
 
 .list{
     list-style-type: none;
-    margin: 4rem;
+    margin: 2.5rem;
     width: 60%;
     transform: translateX(-100%);
 }
@@ -134,36 +115,25 @@ h3{
 
 .list-title{
     color: teal;
-    font-size: 4rem;
+    font-size: 3rem;
     transition: all 0.5s;
 }
 
 .list-title:hover{
     color: rgb(0, 255, 255);
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .list-item{
     color: rgb(122, 122, 122);
-    font-size: 2.5rem;
+    font-size: 2rem;
     transition: all 0.5s;
 }
 .list-item{
     color:rgb(255, 254, 254);
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
-
-@media only screen and (max-width: 800px) {
-    .feature-box{
-        text-align: center;
-    }
-    .feature-form{
-        clear: left;
-        width: 100%;
-    }
-    .feature-search{
-        clear: left;
-        width: 100%;
-    }
-  }
+.btn-cls{
+    margin-left: 50%;
+}

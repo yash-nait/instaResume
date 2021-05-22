@@ -46,6 +46,7 @@ function Card(props){
                         <h3><li className="list-item">{props.exp2}</li></h3>
                     </ul>
                 </div>
+                <a href="/"><button className="btn btn-danger btn-lg btn-cls">Close</button></a>
             </div>
         </div>
     );

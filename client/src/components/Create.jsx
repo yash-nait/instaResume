@@ -48,13 +48,12 @@ function Create(){
     }
 
     return(
-        <div className="create-box">
+        <div id="box" className="create-box">
             <div>
                 <h1>Create A Resume</h1>
                 <p>please fill all blocks</p>
             </div>
-            <div className="create">
-
+            <div>
                 <div className="create-section">
                     <h3>Name</h3>
                     <input type="text" name="name" className="create-input" onChange={changeEle} value={resume.name}></input>
@@ -99,7 +98,7 @@ function Create(){
                     <br/>
                 </div>
 
-                <button type="submit" className="bttn-style" onClick={submitResume}>Submit</button>
+                <button type="submit" className="btn btn-primary" onClick={submitResume}>Submit</button>
 
             </div>
         </div>

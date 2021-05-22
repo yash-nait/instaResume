@@ -3,11 +3,11 @@ import Search from "./Search";
 
 function Feature(){
     return(
-        <div className="feature-box">
-            <div className="feature-search">
+        <div>
+            <div>
                 <Search />
             </div>
-            <div className="feature-form">
+            <div>
                 <Create />
             </div>
         </div>
